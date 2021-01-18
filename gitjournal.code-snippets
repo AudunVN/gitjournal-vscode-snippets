@@ -1,0 +1,56 @@
+{
+	"New journal entry": {
+		"scope": "markdown",
+		"prefix": "journal",
+		"body": [
+			"---",
+			"tags: []",
+			"type: Journal",
+			"created: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND+01:00",
+			"modified: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND+01:00",
+			"---",
+			"",
+			""
+		],
+		"description": "Add new GitJournal-compatible journal entry"
+	},
+	"New checklist": {
+		"scope": "markdown",
+		"prefix": "checklist",
+		"body": [
+			"---",
+			"title: ",
+			"tags: []",
+			"type: Checklist",
+			"created: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND+01:00",
+			"modified: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND+01:00",
+			"---",
+			"",
+			"- [ ] "
+		],
+		"description": "Add new GitJournal-compatible checklist note"
+	},
+	"New note": {
+		"scope": "markdown",
+		"prefix": "note",
+		"body": [
+			"---",
+			"title: ",
+			"tags: []",
+			"created: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND+01:00",
+			"modified: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND+01:00",
+			"---",
+			"",
+			""
+		],
+		"description": "Add new GitJournal-compatible note"
+	},
+	"Current datetime (ISO8601)": {
+		"scope": "markdown",
+		"prefix": "now",
+		"body": [
+			"$CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND+01:00"
+		],
+		"description": "Add new GitJournal-compatible timestamp"
+	}
+}
